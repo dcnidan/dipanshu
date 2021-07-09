@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <title>First full website</title>
+    
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="./logo.png" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to<br> teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p>There are many variations of passages of Lorem, 
+                    ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facilis quam voluptas fuga consequatur perspiciatis eius consectetur 
+                    adipisci vel tempora,repellat error perferendis ad? Accusantium maiores
+                     quas in ipsam perferendis laudantium.</p>
+                     <button class="common-btn">Read More</button>
+                     <div class="line">
+                         <span class="line-1"></span><br>
+                         <span class="line-2"></span><br>
+                         <span class="line-3"></span>
+                     </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+        </ul>
+    </nav>
+    <img src="./menu.png" id="menuBtn">
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="./about.png" >
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quibusdam consectetur libero quaerat? 
+                    Magni mollitia harum vel ab minima laboriosam eius quo libero placeat? 
+                    Quidem veniam molestiae quibusdam quis minima.</p>
+                    <br><br>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                    <h2>"Learning is not attained by chance , it must be sought for with ardor & attended
+                        to with diligence"
+                    </h2>
+                    <h3>---Abigail Adam</h3>
+            </div>
+        </div>
+    </section>
+    <div class="social-icons">
+        <img src="./facebook.png">
+        <img src="./instagram.png">
+        <img src="./twitter.png">
+        <img src="./linkedin.png">
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0" ;
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
